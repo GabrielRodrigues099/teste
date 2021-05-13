@@ -1,0 +1,126 @@
+@media screen and (max-width: 768px) {
+  .menu {
+    .menu__navigation {
+      .menu__list {
+        .menu__link {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+    .footer__social {
+      margin-bottom: 20px;
+    }
+    .footer__logo {
+      display: none;
+    }
+    .footer__paragraphs {
+      height: 50%;
+      width: 100vw;
+      flex-direction: column;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .banner {
+    flex-direction: column;
+    .banner__box {
+      margin-bottom: 16px;
+    }
+    .banner__text {
+      font-size: 16px;
+    }
+  }
+
+  .products {
+    padding: 0;
+    .products__box {
+      .products__img {
+        width: 100vw;
+      }
+    }
+  }
+
+  .content {
+    .content__img {
+      width: 100%;
+    }
+  }
+
+  .number{
+    height: 150px;
+
+    .number__title{
+      font-size: 18px;
+    }
+    .number__text{
+      font-size: 18px;
+      .number__icon{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    .services__title{
+      h3{
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+    .services__content {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .services__text {
+        .services__list {
+          margin-bottom: 20px;
+          .services__item{
+            font-size: 18px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .services__gallery{
+        width: 100vw;
+        height: 300px;
+      }
+    }
+  }
+
+  .cards{
+    padding: 15px 0px;
+    height: auto;
+    border: none;
+    box-shadow: inset 0 0 10px 5px pink;
+
+    .cards__list{
+
+      .selected{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 80%;
+        border: none;
+        border-radius: initial;
+      }
+      .cards__text{
+        .cards__audio{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

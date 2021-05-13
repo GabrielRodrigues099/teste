@@ -1,0 +1,111 @@
+// menu logo
+.logo--animation {
+    animation-name: move;
+    animation-duration: 2000ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+//menu links
+header {
+    overflow: hidden;
+}
+.animation--links {
+    animation-name: links;
+    animation-duration: 4000ms;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+    animation-fill-mode: backwards;
+}
+
+@keyframes links {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+//products
+.products__box {
+    overflow: hidden;
+}
+.products--right {
+    animation-name: products-right;
+    animation-duration: 2000ms;
+    animation-fill-mode: backwards;
+}
+
+.products--left {
+    animation-name: products-left;
+    animation-duration: 2000ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes products-right {
+    from {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes products-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+//about
+.content {
+    animation-name: content-bottom;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes content-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//home
+.number {
+    animation-name: content-bottom;
+    animation-duration: 4000ms;
+    animation-fill-mode: forwards;
+}
+.services {
+    animation-name: content-bottom;
+    animation-duration: 5000ms;
+    animation-fill-mode: forwards;
+}
+
+.cards{
+    animation-name: content-bottom;
+    animation-duration: 6000ms;
+    animation-fill-mode: forwards;
+}

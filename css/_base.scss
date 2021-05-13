@@ -1,0 +1,108 @@
+$link-color: #777777;
+$link-hover-color: #FFC0CB;
+$background: #FFFBFB;
+$text-color: #777777;
+
+@mixin font-base {
+  font-family: 'Lora', serif;
+}
+
+@mixin flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border {
+  border-bottom: 1px solid pink;  
+}
+
+@mixin cards{
+  border: 3px solid pink;
+  border-radius: 5px;
+  color: $text-color;
+  padding: 10px;
+  background-color: #FFE4E2 ;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.spinner{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $background;
+  .spinner__wrap{
+    width: 100px;
+    height: 100px;
+    background: url('../img/logoQuitutes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+  }
+  .spinner--animation{
+    animation-name: preload;
+    animation-duration: 2500ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+  }
+  
+}
+@keyframes preload{
+  0%{
+    opacity: 0;
+    transform: translateX(100vw);
+    width: 100px;
+    height: 100px;
+  }
+  25%{
+    opacity: 1;
+    transform: translateX(0);
+    width: 120px;
+    height: 120px;
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(0);
+    width: 110px;
+    height: 110px;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(-100vw);
+    width: 100px;
+    height: 100px;
+  }
+}
+
+header{
+    background: linear-gradient(#FFE4E2,#FFF0FF,#FFFBFB);
+    
+}
+.container{
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+
+main{
+    background-color: $background ;
+    overflow: hidden;
+}
+
+.form{
+  @include flex-center;
+  height: 980px;
+}
+

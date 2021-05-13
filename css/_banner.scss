@@ -1,0 +1,43 @@
+.banner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid pink;
+
+    .banner__text{
+        text-transform: uppercase;
+        @include font-base;
+        font-weight: bold;
+        word-spacing: 10px;
+        border-bottom: 2px solid pink;
+        color: $text-color;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .banner__box {
+        @include flex-center;
+        background-color: #FDEDEC ;
+        border: 1px solid pink;
+        border-radius: 100%;
+        position: relative;
+        width: 180px;
+        height: 180px;
+        .banner__image {
+            width: 80%;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 500ms;
+
+            &.selected {
+                opacity: 1;
+                justify-content: center;
+            }
+            
+        }
+    }
+}
+
+
